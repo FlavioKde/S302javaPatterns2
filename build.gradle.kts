@@ -1,6 +1,15 @@
 plugins {
     id("java")
+    id("application")
 }
+/*
+application {
+    mainClass.set("org.example.Main")
+}
+
+
+ */
+
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
@@ -17,3 +26,10 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(19))
+    }
+}
+
+
