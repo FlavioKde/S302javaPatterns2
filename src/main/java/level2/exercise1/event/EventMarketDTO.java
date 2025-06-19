@@ -1,7 +1,5 @@
 package level2.exercise1.event;
-
 import level2.exercise1.model.MarketChangeType;
-
 import java.time.LocalDateTime;
 
 public class EventMarketDTO {
@@ -10,6 +8,7 @@ public class EventMarketDTO {
     private double percentage;
     private LocalDateTime timestamp;
     private String description;
+
 
     public EventMarketDTO(String marketIndex, MarketChangeType changeType,double percentage,
                           LocalDateTime timestamp, String description){
@@ -39,4 +38,6 @@ public class EventMarketDTO {
     public String getDescription() {
         return description;
     }
+
+
 }

@@ -26,10 +26,4 @@ public class EventBroker implements Observable {
             }
     }
 
-    @Override
-    public String toString() {
-        return "EventBroker{" +
-                "marketObserver=" + marketObserver +
-                '}';
-    }
 }
