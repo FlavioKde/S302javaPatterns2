@@ -1,10 +1,8 @@
 package level2.exercise1.model;
-
+import level2.exercise1.event.EventMarketDTO;
 import level2.exercise1.interfaces.Observable;
 import level2.exercise1.interfaces.Observer;
-
 import java.util.HashSet;
-
 
 
 public class EventBroker implements Observable {
@@ -22,13 +20,11 @@ public class EventBroker implements Observable {
     }
 
     @Override
-    public void notifyObserver(){
+    public void notifyObserver(EventMarketDTO eventMarketDTO){
             for(Observer observer : marketObserver){
-                observer.update();
+                observer.update(eventMarketDTO);
             }
     }
-
-
 
     @Override
     public String toString() {
