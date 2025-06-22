@@ -86,12 +86,10 @@ This project demonstrates the implementation of **classic software design patter
 
 2. **Build the project**
 
-   ```bash
 ./gradlew build
 
 3. **Run a specific level**
 
-    ```bash
 # Builder pattern
 ./gradlew run --args='builder'
 
