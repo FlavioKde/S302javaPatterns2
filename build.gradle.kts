@@ -10,6 +10,10 @@ application {
 
  */
 
+application {
+    mainClass.set("level3.exercise1.Main") // Configuración principal
+}
+
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
