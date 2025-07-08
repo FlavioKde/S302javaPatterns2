@@ -20,21 +20,6 @@ public abstract class ShoesStoreCentral implements IPaymentContext {
         return paymentType;
     }
 
-
-    public String getShoesName() {
-        return shoesName;
-    }
-
-    public double getShoesSize() {
-        return shoesSize;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-
-
     @Override
     public String toString() {
         return "ShoesStoreCentral{" +

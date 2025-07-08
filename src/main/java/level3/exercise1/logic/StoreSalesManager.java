@@ -1,6 +1,7 @@
 package level3.exercise1.logic;
 
 import level3.exercise1.handler.PaymentHandler;
+import level3.exercise1.interfaces.IPaymentCallback;
 import level3.exercise1.model.*;
 
 public class StoreSalesManager {
@@ -15,8 +16,7 @@ public class StoreSalesManager {
 
         PaymentHandler handler = new PaymentHandler(shoesSales);
 
-        TicketSales ticket = new TicketSales(handler);
-
+        TicketSales ticket = new TicketSales(handler,shoesStore);
 
         ticket.startSale();
     }

@@ -1,9 +1,10 @@
 package level3.exercise1.model;
 
 
-import level3.exercise1.interfaces.IPaymentContext;
+import level3.exercise1.interfaces.IPaymentCallback;
 
-public class ShoesStore extends ShoesStoreCentral implements IPaymentContext {
+
+public class ShoesStore extends ShoesStoreCentral implements IPaymentCallback {
 
     public ShoesStore(PaymentTypeMethod paymentType, String shoesName, double shoesSize, double price ){
         super(paymentType, shoesName, shoesSize, price);
