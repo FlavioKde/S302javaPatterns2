@@ -34,7 +34,7 @@ This project demonstrates the implementation of **classic software design patter
 ├── level1.builder # Pizza Builder pattern ├── level2.observer # Stock Agent Observer pattern ├── level3.callback # Payment Gateway Callback simulation └── Main.java # Entry points per level
 
 
----
+```
 
 ## 💡 Pattern Summaries
 
