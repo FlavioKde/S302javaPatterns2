@@ -14,7 +14,7 @@ public class TicketSales implements ICallback {
     @Override
     public void call() {
 
-        System.out.println("Se imprime el ticket de la comanda");
+        System.out.println("The order ticket is printed");
     }
     public void startSale() {
 

@@ -18,13 +18,13 @@ public class PaymentServices implements IImplementPayment {
 
 
         if (paymentType == null) {
-            throw new InvalidPaymentMethodException("Debe ser un método de pago valido");
+            throw new InvalidPaymentMethodException("Must be a valid payment method.");
 
         }
         switch (paymentType) {
-            case CASH -> System.out.println("procesando pago efectivo");
-            case CREDIT_CARD -> System.out.println("procesando pago credit");
-            case TRANSFER -> System.out.println("procesando transferencia");
+            case CASH -> System.out.println("Processing cash payment.");
+            case CREDIT_CARD -> System.out.println("Processing payment credit card");
+            case TRANSFER -> System.out.println("Processing  transfer");
 
         }
         return paymentType;

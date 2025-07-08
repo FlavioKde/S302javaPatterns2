@@ -19,9 +19,9 @@ public class PaymentHandler implements Icommand {
         try {
             shoesSales.methodPayment();
             iCallback.call();
-            System.out.println("Transacción finalizada.");
+            System.out.println("Transaction completed.");
         } catch (InvalidPaymentMethodException e) {
-            System.out.println("no es valido el metood de pago" +e.getMessage());
+            System.out.println("the payment method is not valid" +e.getMessage());
         }
 
     }
